@@ -1,29 +1,61 @@
+// _sass\main.scss
+
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 // Customization
 
 // You can easily customize Bulma with your own variables.
 // Just uncomment the following block to see the result.
 
-/*
+// /*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 // 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
+
+// add purple and its invert
+$purple: hsl(271, 81%, 56%);
+$purple-invert: hsl(0, 0%, 100%);
+
+// customize black to white colors
+$black: hsl(229, 84%, 5%);
+$black-bis: hsl(222, 47%, 11%);
+$black-ter: hsl(217, 33%, 17%);
+$grey-darker: hsl(215, 25%, 27%);
+$grey-dark: hsl(215, 19%, 35%);
+$grey: hsl(215, 16%, 47%);
+$grey-light: hsl(215, 20%, 65%);
+$grey-lighter: hsl(213, 27%, 84%);
+$grey-lightest: hsl(214, 32%, 91%);
+$white-ter: hsl(210, 40%, 96%);
+$white-bis: hsl(210, 40%, 98%);
+$white: hsl(0, 0%, 100%);
+
 // Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "Kanit", "Arial", sans-serif;
 
 // 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
+$primary: $purple;
+$primary-invert: $purple-invert;
+$link: $purple;
 
 // 4. Import the rest of Bulma
-*/
 
 @import "../node_modules/bulma/bulma";
+
+// 5. Custom styles for your site goes here.
+.features-section {
+  .card {
+    height: 100%;
+  }
+
+  .card-image {
+    height: 24rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
